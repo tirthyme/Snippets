@@ -1,9 +1,9 @@
 # Before creating a new PR
 Please create an issue and tag it with any of belowe listed tags before creating a PR.
-  i. Feature 
-  ii. Bug 
-  iii. Documentation 
-  iv. Test
+  * Feature 
+  * Bug 
+  * Documentation 
+  * Test
 
 Maintainer shall review the issue and assign it, after this you can submit a PR.
 (It saves effort of both maintainer and contributor by avoiding unnecessary contribution)
@@ -15,7 +15,7 @@ make sure to add a test file as well showing the way to use the given Algo or DS
 Please re-use existing code intsead of adding your own implementation.
 
 This project uses ICIE plugin for VS Code (https://github.com/pustaczek/icie), when adding 
-new file, please use define fields (Name, Description, Detail, Guarantee, Dependencies).
+new file, please use defined fields (Name, Description, Detail, Guarantee, Dependencies).
 - filename: small case, words seperated by _ instead of space
 - Name: FileName in CapitalCamelCase
 - Description : Description of algorithm or data structure 

@@ -23,6 +23,8 @@ new file, please use defined fields (Name, Description, Detail, Guarantee, Depen
 - Guarantee: End delimiter of code. (e.g. This project uses "// Name". Look at end of any file in c++ folder for example)
 - Dependency: filename of other files required for this code (Reusing code instead of implementing it again)
 
+Please don't make PR with adhoc algorithms.
+
 ## Creating a PR for Test
 Test file should have same name as filename for which test is written. Test file should use the use case of algorithm and ds.
 

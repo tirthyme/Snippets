@@ -17,7 +17,7 @@ struct node
 class BST
 {
 private:
-    struct node* root;
+    struct node* root = nullptr;
 public:
     struct node* search(int val) {
         if(root == nullptr) {

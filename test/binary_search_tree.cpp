@@ -1,7 +1,5 @@
-/// Name: BinarySearchTree
-/// Description: Implementation of bst
-/// Detail: Balanced Tree, Binary Tree
-/// Guarantee: // BinarySearchTree
+#include <bits/stdc++.h>
+using namespace std;
 
 struct node
 {
@@ -179,3 +177,39 @@ private:
             inorder_traversal(curr->right);
     }
 }; // BinarySearchTree
+
+/* output
+
+20       
+20 40    
+10 20 40 
+10 20 40    
+10 15 20 40 
+10 15 40    
+*/
+
+int main()
+{
+    BST tree = BST();
+    tree.inorder();
+    cout<<"\n";
+    tree.insert(20);
+    tree.inorder();
+    cout<<"\n";
+    tree.insert(40);
+    tree.inorder();
+    cout<<"\n";
+    tree.insert(10);
+    tree.inorder();
+    cout<<"\n";
+    tree.erase(15);
+    tree.inorder();
+    cout<<"\n";
+    tree.insert(15);
+    tree.inorder();
+    cout<<"\n";
+    tree.erase(20);
+    node* ptr = tree.search(15);
+    assert(ptr != nullptr);
+    tree.inorder();
+}
